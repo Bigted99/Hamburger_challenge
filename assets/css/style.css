@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 *,
 *::after,
 *::before {
@@ -6,47 +7,57 @@
   box-sizing: border-box;
 }
 
-  html {
-    font-size: 16px;
-  }
+html {
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+}
 
-  :root {
-    --black-color: rgba(25, 24, 24, 1);
-    --white-color: rgba(255, 255, 255, 1);
-    --yellow-color: rgba(235, 217, 107, 1);
-    --gray-color: rgba(127, 127, 127, 1);
-    --light-gray-color: rgba(211, 211, 211, 1);
-    --red-color: rgba(234, 23, 1, 1);
-    --circle-color: rgba(239, 236, 235, 1);
-  }
+:root {
+  --black-color: rgba(25, 24, 24, 1);
+  --white-color: rgba(255, 255, 255, 1);
+  --yellow-color: rgba(235, 217, 107, 1);
+  --gray-color: rgba(127, 127, 127, 1);
+  --light-gray-color: rgba(211, 211, 211, 1);
+  --red-color: rgba(234, 23, 1, 1);
+  --circle-color: rgba(239, 236, 235, 1);
+}
 
-  body {
-    background: var(--yellow-color);
-    padding: 0 0.35rem;
-  }
-
+body {
+  background: var(--yellow-color);
  
 
+}
+
 .big-mac {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: var(--red-color);
-    padding: 0.35rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--red-color);
+  padding: 0 0.85rem ;
 }
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 2rem;
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+ justify-content: center;
+  align-items: center;
+  
 }
 
-  .logo img {
-     
-        object-fit: cover;
-        height: 4.5rem;
-        border-radius: 10rem;
-        padding-bottom: 2rem;
-      
-  }
+.logo img {
+  object-fit: cover;
+  height: 3.5rem;
+  border-radius: 10rem;
+ 
+}
+
+.menu li a {
+    color: var(--white-color);
+    text-decoration: none;   
+    display: block;
+    line-height: 1;
+    font-size: 1.8rem;
+    padding: 15px 9px;
+}
