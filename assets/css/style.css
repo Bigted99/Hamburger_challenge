@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  html {
+    font-size: 16px;
+  }
+
+  :root {
+    --black-color: rgba(25, 24, 24, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --yellow-color: rgba(235, 217, 107, 1);
+    --gray-color: rgba(127, 127, 127, 1);
+    --light-gray-color: rgba(211, 211, 211, 1);
+    --red-color: rgba(234, 23, 1, 1);
+    --circle-color: rgba(239, 236, 235, 1);
+  }
+
+  body {
+    background: var(--yellow-color);
+    padding: 0 0.35rem;
+  }
+
+ 
+
+.big-mac {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--red-color);
+    padding: 0.35rem 0;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+}
+
+  .logo img {
+     
+        object-fit: cover;
+        height: 4.5rem;
+        border-radius: 10rem;
+        padding-bottom: 2rem;
+      
+  }
